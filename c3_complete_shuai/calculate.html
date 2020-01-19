@@ -1,0 +1,49 @@
+<table>
+  <tr>
+    <td>Unit you want to calculat in</td>
+    <td>
+      <input type="text" name="units" id="units" />
+    </td>
+  </tr>
+  <tr>
+    <td>x1</td>
+    <td>
+      <input type="text" name="x1" id="x1" />
+    </td>
+  </tr>
+  <tr>
+    <td>y1</td>
+    <td>
+      <input type="text" name="y1" id="y1" />
+    </td>
+  </tr>
+  <tr>
+    <td>x2</td>
+    <td>
+      <input type="text" name="x2" id="x2" />
+    </td>
+  </tr>
+  <tr>
+    <td>y2</td>
+    <td>
+      <input type="text" name="y2" id="y2" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><a href="#" id="submit" onclick="calcDistance()">Submit</a></td>
+  </tr>
+  <tr>
+    <td colspan="2"><span id="result"></span></td>
+  </tr>
+</table>
+<script>
+function calcDistance() {
+	let units = document.getElementById('units').value;
+	let x1 = document.getElementById('x1').value;
+	let y1 = document.getElementById('y1').value;
+	let x2 = document.getElementById('x2').value;
+	let y2 = document.getElementById('y2').value;
+  
+  document.getElementById('result').innerHTML = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2)) + units;
+}
+</script>
