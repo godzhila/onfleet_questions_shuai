@@ -6,9 +6,9 @@ When I did the calculation : 2020-01-17 17:42:23
 
 31years 259 day 1 hour 47 mins and 40 something seconds ago
  
-So somewhere in year 1988, May something rough estimate, let along getting the day of the week, and/or the details.  
+So somewhere in year 1988, May something, rough estimate.  
 
-However, Java Date util has some nifty stuffs where it can calculate time given the seconds in the standard format. so i did that real quick 
+However, Java Date util has some nifty stuffs where it can calculate time given the seconds in the standard format. so I did that real quick 
 
 using Groovy:
 
@@ -21,8 +21,8 @@ def bil_date = new Date();
 cur_date.getSeconds()//(cur_date.getSeconds());
 bil_date.setSeconds(bil_date.getSeconds()- 1000000000);
 
-System.out.println("old Value is: "+ cur_date);
-System.out.println("New Value is: "+ bil_date);
+System.out.println "old Value is: "+ cur_date;
+System.out.println "New Value is: "+ bil_date;
 
 old Value is: Fri Jan 17 17:59:39 PST 2020
 New Value is: Tue May 10 16:12:59 PDT 1988
