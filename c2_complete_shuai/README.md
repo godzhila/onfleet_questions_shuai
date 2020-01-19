@@ -11,6 +11,7 @@ So somewhere in year 1988, May something rough estimate, let along getting the d
 However, Java Date util has some nifty stuffs where it can calculate time given the seconds in the standard format. so i did that real quick 
 
 using Groovy:
+
 ```
 import java.util.Date
 
@@ -22,11 +23,10 @@ bil_date.setSeconds(bil_date.getSeconds()- 1000000000);
 
 System.out.println("old Value is: "+ cur_date);
 System.out.println("New Value is: "+ bil_date);
-```
 
 old Value is: Fri Jan 17 17:59:39 PST 2020
 New Value is: Tue May 10 16:12:59 PDT 1988
-
+```
 
 b) Pretend it is Wednesday, October 24, 2018. A Swiss dispatcher, Lara, will be coordinating the schedule for the next 1 week of deliveries for a team of drivers in Jordan. She can only schedule deliveries the day before they are set to be delivered. Assuming that Lara is working from her local timezone, the drivers work in theirs, and you are in the Pacific Timezone, how would you advise Lara to set the delivery completion(???) times over each of the following 7 days?
 
